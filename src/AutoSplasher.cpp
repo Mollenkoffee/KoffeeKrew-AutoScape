@@ -6,7 +6,7 @@ AutoSplasher::AutoSplasher() : running(false)
 {
     std::random_device rd;
     rng = std::mt19937(rd());
-    distribution = std::uniform_int_distribution<int>(0, 5); // Random time between 0s - 19 min (0 to 1140 seconds)
+    distribution = std::uniform_int_distribution<int>(0, 1140); // Random time between 0s - 19 min (0 to 1140 seconds)
 }
 
 void AutoSplasher::start()
